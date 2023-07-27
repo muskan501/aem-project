@@ -1,0 +1,47 @@
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-call="${clientLib.all @ categories='ixm-aem.tile'}"/>
+<sly data-sly-use.model="com.ixm.core.models.TileModel"
+	data-sly-use.template="core/wcm/components/commons/v1/templates.html">	
+    <div id="myComp" class="component info col-12">
+       <div class="component-content">
+          <div class="container info-complete">
+             <div>
+                <h2 class="field-title">${model.title}</h2>
+                <div data-sly-test="${model.subTitle!=null}" class="field-description-subtitle">${model.subTitle}</div>
+             </div>
+             <div class="quote">
+                <div data-sly-test="${model.quotes}" class="quotes opening field-quotes-opening">
+                    <img src="/apps/ixm-aem/clientlibs/clientlib-site/resources/images/Quote_White.svg" alt="not working"  />
+                </div>
+                 <div class="component">
+                    <div class="tileCount">
+                       <div class="component imagetexttile col-12">
+                          <div class="component-content">
+                             <div class="white-card-container">
+                                <div data-sly-test="${model.quotes}" class="white-card"  style="padding-top: 50px;">
+                                   <h3 data-sly-test="${model.tileItems[0].title!=null}" class="field-title">${model.tileItems[0].title}</h3>
+                                   <div class="field-description">
+                                        ${model.tileItems[0].description}
+                                      <div>&nbsp;</div>
+                                   </div>
+                                </div>
+								<div data-sly-test="${!model.quotes}" class="white-card" >
+                                   <h3 data-sly-test="${model.tileItems[0].title!=null}" class="field-title">${model.tileItems[0].title}</h3>
+                                   <div class="field-description">
+                                        ${model.tileItems[0].description}
+                                      <div>&nbsp;</div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>            
+                 </div>
+                <div data-sly-test="${model.quotes}" class="quotes closing field-quotes-closing">
+                    <img src="/apps/ixm-aem/clientlibs/clientlib-site/resources/images/Quote_Green.svg" alt="Not working" />
+                </div>
+            </div>
+          </div>
+       </div>
+    </div>
+</sly>

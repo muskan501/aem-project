@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <rep:policy/>
+    <ixm-aem jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <container jcr:primaryType="nt:unstructured">
+                <policy_root
+                    jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Page Root"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:IXM AEM - Content,group:IXM AEM - Structure]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:authoring jcr:primaryType="nt:unstructured">
+                        <assetToComponentMapping jcr:primaryType="nt:unstructured"/>
+                    </cq:authoring>
+                </policy_root>
+                <policy_container
+                    jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Page Content"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/libs/core/wcm/components/carousel/v1/carousel,group:IXM AEM - Content]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:authoring jcr:primaryType="nt:unstructured">
+                        <assetToComponentMapping jcr:primaryType="nt:unstructured"/>
+                    </cq:authoring>
+                </policy_container>
+                <policy_xf
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="policy_xf"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/ixm-aem/components/footer,/apps/ixm-aem/components/header]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_xf>
+            </container>
+            <separator jcr:primaryType="nt:unstructured">
+                <policy_separator                    
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Separator_policy"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Separator-Width"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="separator_width1"
+                                    cq:styleId="1660811715712"
+                                    cq:styleLabel="width-1px"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="separator_width2"
+                                    cq:styleId="1660811750864"
+                                    cq:styleLabel="width-2px"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="separator_width3"
+                                    cq:styleId="1660811762909"
+                                    cq:styleLabel="width-3px"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="separator_width50"
+                                    cq:styleId="1661927151934"
+                                    cq:styleLabel="width-50px"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Separator-Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="separator_color1"
+                                    cq:styleId="1660811837621"
+                                    cq:styleLabel="White"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="separator_color2"
+                                    cq:styleId="1660811842958"
+                                    cq:styleLabel="Green"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="separator_color3"
+                                    cq:styleId="1660811846535"
+                                    cq:styleLabel="Blue"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="separator_color4"
+                                    cq:styleId="1661927285609"
+                                    cq:styleLabel="Dark Blue"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                    </cq:styleGroups>
+                </policy_separator>
+            </separator>
+            <tile jcr:primaryType="nt:unstructured">
+                <policy_tile
+                    jcr:description="Allows the author to use different styles while rendering component on the page."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Policy Tile"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Title-Text-Color"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="main-title-green"
+                                    cq:styleId="1661245892709"
+                                    cq:styleLabel="Main Title Green"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="sub-title-green"
+                                    cq:styleId="1661245894075"
+                                    cq:styleLabel="Sub Title Green"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Tile-Title-Text-Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="title-text-red"
+                                    cq:styleId="1658910321224"
+                                    cq:styleLabel="Title Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="title-text-blue"
+                                    cq:styleId="1658910341497"
+                                    cq:styleLabel="Title Blue"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="title-text-green"
+                                    cq:styleId="1658910346844"
+                                    cq:styleLabel="Title Green"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Tile-Description-Text-Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="description-text-red"
+                                    cq:styleId="1658910358800"
+                                    cq:styleLabel="Description Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="description-text-blue"
+                                    cq:styleId="1658910362833"
+                                    cq:styleLabel="Description Blue"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="description-text-green"
+                                    cq:styleId="1658910366152"
+                                    cq:styleLabel="Description Green"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                        <item3
+                            cq:styleGroupLabel="Tile-Background-Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="background-color-red"
+                                    cq:styleId="1658910371680"
+                                    cq:styleLabel="Background Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="background-color-blue"
+                                    cq:styleId="1658910374340"
+                                    cq:styleLabel="Background Blue"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="background-color-green"
+                                    cq:styleId="1658910377030"
+                                    cq:styleLabel="Background Green"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item3>
+                        <item4
+                            cq:styleGroupLabel="Tile-Hover-Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="hover-color-red"
+                                    cq:styleId="1658910394818"
+                                    cq:styleLabel="Hover Red"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="hover-color-blue"
+                                    cq:styleId="1658910398154"
+                                    cq:styleLabel="Hover Blue"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="hover-color-green"
+                                    cq:styleId="1658910400478"
+                                    cq:styleLabel="Hover Green"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item4>
+                    </cq:styleGroups>
+                </policy_tile>
+            </tile>
+            <page jcr:primaryType="nt:unstructured">
+                <policy_template
+                    cq:styleDefaultClasses="body-background"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="ixm-aem.site"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="ixm-aem.site"
+                    clientlibsAsync="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_template>
+            </page>
+        </components>
+    </ixm-aem>
+    <core jcr:primaryType="nt:unstructured">
+        <wcm jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <carousel jcr:primaryType="nt:unstructured">
+                    <v1 jcr:primaryType="nt:unstructured">
+                        <carousel jcr:primaryType="nt:unstructured">
+                            <policy_carousel_teaser
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="policy_carousel_teaser"
+                                sling:resourceType="wcm/core/components/policy/policy"
+                                autopauseDisabled="false"
+                                autoplay="false"
+                                components="/apps/ixm-aem/components/teaser"
+                                controlsPrepended="false"
+                                delay="5000">
+                                <jcr:content jcr:primaryType="nt:unstructured"/>
+                            </policy_carousel_teaser>
+                        </carousel>
+                    </v1>
+                </carousel>
+            </components>
+        </wcm>
+    </core>
+</jcr:root>

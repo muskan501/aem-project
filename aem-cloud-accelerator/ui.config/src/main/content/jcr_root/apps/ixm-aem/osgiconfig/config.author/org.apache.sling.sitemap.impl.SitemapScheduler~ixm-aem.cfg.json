@@ -1,0 +1,8 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "scheduler.expression":"0 0/30 * 1/1 * ? *",
+  "includeGenerators":[
+    "com.ixm.core.service.impl.IxmSitemapGenerator"
+  ],
+  "scheduler.name":"IXM AEM Sitemaps"
+}

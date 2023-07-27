@@ -1,0 +1,42 @@
+<sly data-sly-use.model="com.ixm.core.models.TabLinksModel">
+<div class="col-3">
+	<div
+		data-sly-resource="${'logo' @ resourceType='ixm-aem/components/logo'}"></div>
+
+<div class="component rich-text col-12">
+    <div class="component-content">
+        <div class="footer-col footer-logo">
+            <span style="font-size: 18px; font-weight: 400; background-color: initial; font-family: EquipExtended, Helvetica, Arial, sans-serif;">
+
+<div
+		data-sly-resource="${'address' @ resourceType='core/wcm/components/text/v2/text'}"></div>
+             
+            </span>
+            <span style="font-size: 18px; background-color: initial;"></span>
+        </div>
+    </div>
+</div>
+
+</div>
+<sly data-sly-list.tabItem="${model.tabs}">
+<div class="col-2">
+	<div class="component link-list automate-linklist-default col-12">
+		<div class="component-content">
+			<h3>${tabItem.title}</h3>
+			<ul>
+				<sly data-sly-list.linkItem="${tabItem.links}">
+				<li class="item0 odd">
+					<div class="field-link">
+						<sly data-sly-test="${linkItem.linkUrl && linkItem.linkText}">
+							<a href="${linkItem.linkUrl}" target="${linkItem.linkTarget}"
+								data-variantitemid="" title="Case Studies"
+								data-variantfieldname="Link">${linkItem.linkText}</a>
+						</sly>
+					</div>
+				</li>
+				</sly>
+			</ul>
+		</div>
+	</div>
+</div>
+</sly> </sly>

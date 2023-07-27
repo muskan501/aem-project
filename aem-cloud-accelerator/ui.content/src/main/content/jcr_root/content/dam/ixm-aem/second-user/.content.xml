@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="7ac1c041-7edb-4b24-a05b-61fbfe76b2ea">
+    <jcr:content
+        cq:name="second-user"
+        cq:parentPath="/content/dam/ixm-aem"
+        jcr:lastModified="{Date}2022-09-05T18:08:58.262+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Second User"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2022-09-05T18:08:58.262+05:30">
+        <data
+            cq:model="/conf/ixm-aem/settings/dam/cfm/models/person"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                biographyText="&lt;p>This is biograhy of Second User&lt;/p>&#xa;"
+                biographyText_x0040_ContentType="text/html"
+                biographyText_x0040_LastModified="{Date}2022-09-05T18:08:58.215+05:30"
+                fullName="Second User Name"
+                fullName_x0040_LastModified="{Date}2022-09-05T18:08:58.214+05:30"
+                occupation="[Photographer,Traveler]"
+                occupation_x0040_LastModified="{Date}2022-09-05T18:08:58.216+05:30"
+                profilePicture="/content/dam/ixm-aem/images/Kapil.png"
+                profilePicture_x0040_LastModified="{Date}2022-09-05T18:08:58.216+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

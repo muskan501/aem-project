@@ -1,0 +1,256 @@
+.container {
+	>.component-content {
+		>.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	max-width: 1160px;
+	padding: 0;
+}
+.row.column-splitter {
+	margin-left: 0;
+	margin-right: 0;
+	max-width: none;
+}
+.row {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.column-splitter {
+	box-sizing: border-box;
+	width: 100%;
+}
+.row-splitter {
+	box-sizing: border-box;
+	width: 100%;
+}
+.component {
+	box-sizing: border-box;
+}
+.custom-listing-facets {
+	margin-top: 15px;
+}
+section {
+	display: block;
+	margin-bottom: 100px;
+}
+
+.case-study-sidebar {
+	padding: 30px;
+	background-color: $background-color_sidebar;
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.sidebar-btn {
+		font-size: 20px;
+		font-weight: 700;
+		color: $color_2;
+		line-height: 2;
+		margin-bottom: 10px;
+		img {
+			width: 13px;
+			margin-left: 5px;
+		}
+	}
+	button {
+		padding: 0;
+		margin: 0;
+		background: 0 0;
+		box-shadow: none;
+		border: none;
+		cursor: pointer;
+		display: block;
+		width: 100%;
+		text-align: left;
+		line-height: 3.13;
+		position: relative;
+	}
+	.submenu-btn {
+		font-size: 16px;
+		font-weight: 400;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: normal;
+		color: $color_text;
+		line-height: 2;
+		padding: 5px 0;
+		margin: 10px 0;
+	}
+}
+.search-results {
+	position: relative;
+	.search-result-list {
+		padding-top: 5px;
+	}
+}
+.search-results.components {
+	.search-result-list {
+		width: 100%;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+}
+.search-results.example-fields {
+	.search-result-list {
+		width: 100%;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+}
+.search-results.horizontal {
+	.search-result-list {
+		width: 100%;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+}
+.search-result-item {
+	padding: 10px;
+	width: 290px;
+}
+a {	
+	text-decoration: none;
+	color: $color_text;
+}
+.bottom-remove-filter {
+	float: right;
+	width: auto;
+	font-size: 12px;
+	color: $color_text;
+	button {
+		background-color: $background-color_removeButton-tags;
+		color: $color_text;
+		padding: 5px;
+		cursor: pointer;
+	}
+}
+ul.facet-summary-list {
+	padding: 0;
+	margin: 20px 0 20px;
+	list-style: none;
+	display: flex;
+	overflow-x: auto;
+}
+li.facet-summary-item {
+	width: auto;
+	padding: 5px;
+	background-color: $background-color_removeButton-tags;
+	font-size: 12px;
+	margin-right: 5px;
+	color: $color_text;
+	cursor: pointer;
+	svg {
+		width: 7px;
+		height: 7px;
+		margin-left: 5px;
+		vertical-align: middle;
+	}
+}
+.facet-heading {
+	.clear-filter {
+		display: none;
+	}
+}
+.position-center {
+	text-align: center !important;
+	* {
+		text-align: center !important;
+	}
+}
+.load-more {
+	input[type=button] {
+		background: 0 0 !important;
+		border: none !important;
+		margin: 0;
+		padding: 0 !important;
+		cursor: pointer;
+		color: $color_3 !important;
+		font-size: 24px;
+		font-weight: 800;
+	}
+	input {
+		font-family: $font-family_1;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $color_4;
+		padding: 19px 18px 20px 20px !important;
+		background-color: $background-color_loadMoreButton !important;
+		text-decoration: none;
+		border-radius: 4px !important;
+		text-transform: none;
+		display: inline-block;
+		box-sizing: border-box;
+		background: #fff !important;
+		border: 1px solid #d2d2d2;
+		border-radius: 0 !important;
+		color: $color_5;
+		font-weight: 400;
+		padding: 8px 2%;
+		clear: both;
+		height: auto;
+		font-size: 13px;
+	}
+	button {
+		display: inline-block;
+		box-sizing: border-box;
+		background: #fff !important;
+		border: 1px solid #d2d2d2;
+		border-radius: 0 !important;
+		color: $color_5;
+		font-weight: 400;
+		padding: 8px 2%;
+		clear: both;
+		height: auto;
+		font-size: 13px;
+	}
+}
+load-more {
+	button {
+		font-family: $font-family_1;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $color_4;
+		padding: 19px 18px 20px 20px !important;
+		background-color: $background-color_loadMoreButton !important;
+		text-decoration: none;
+		border-radius: 4px !important;
+		text-transform: none;
+	}
+}
+.tilesImage {
+	width: 250px !important;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+.field-title {
+	color: $color_text;
+}
+
+.field-title, a {
+	font-weight: bold;
+	font-family: $font-family;
+	font-size: $filter-card-tiles-font-size;
+}
+
+.listParentTag{
+	display: table !important;
+}
+
+.listParentTag, li{
+	display: table !important;
+}
+
+.listParentTag, li, button{	
+	font-family: $font-family;
+	font-size: 16px;
+}
+
+.filterCards {	
+	margin: auto;
+}

@@ -1,0 +1,22 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<p data-emptytext = "Hero Image" class="cq-placeholder"></p>
+</sly>
+<sly data-sly-use.model="com.ixm.core.models.HeroImageComponent">
+	<div class="hero-image" data-tabimage="${model.tabletImageReference}" data-mobileimage="${model.mobileImageReference}" style="border: ${model.imageBorder @ context = 'styleString'}px solid">
+		<img src=${model.desktopImageReference} alt=${model.altText}>
+		<div class="text-container" style="text-align: ${model.textAlignment @ context = 'styleString'}" data-sly-test="${model.text || model.description || model.linkUrl}">
+			<div class="heading">
+				<h1>${model.text}</h1>
+			</div>
+			<div class="description">
+				<p>${model.description @ context = 'html'}</p>
+			</div>
+			<sly data-sly-test="${model.linkUrl}">
+				<a class="button" href="${model.linkUrl}.html" type="button">${model.linkText}</a>
+			</sly>
+		</div>
+
+		<div class="mask"></div>
+	</div>
+</sly>
+

@@ -1,0 +1,29 @@
+query personByName($name: String!) {
+  personList(
+    filter: {
+      fullName:{
+        _expressions: [{
+          value: $name
+          _operator:EQUALS
+        }]
+      }
+    }){
+    items {
+      _path
+      fullName
+      occupation
+      biographyText {
+        json
+      }
+      profilePicture {
+        ... on ImageRef {
+          _path
+          _authorUrl
+          _publishUrl
+          width
+          height
+        }
+      }
+    }
+  }
+}

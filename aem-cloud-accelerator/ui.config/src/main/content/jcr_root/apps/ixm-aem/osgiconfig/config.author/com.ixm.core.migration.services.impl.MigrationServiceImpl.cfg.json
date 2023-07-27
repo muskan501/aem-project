@@ -1,0 +1,12 @@
+{
+"getFolderPath" : "/content/ixm-aem/us/en/",
+"getExcelPath" : "/content/dam/ixm-aem/file.xlsx",
+"getPageListColNum" : 0,
+"getTemplatesColNum" : 1,
+"getProcessStatusColNum" : 2,
+"getPropertiesStartColNum" : 3,
+"getPropertiesEndColNum" : 7,
+"getResultFolderPath" : "/content/dam/ixm-aem/migrationResult",
+"getSuccessFileName" : "successfile",
+"getErrorFileName" : "errorfile"
+}

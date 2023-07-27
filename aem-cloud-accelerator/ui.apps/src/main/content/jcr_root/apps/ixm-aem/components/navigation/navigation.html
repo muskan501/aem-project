@@ -1,0 +1,57 @@
+<sly data-sly-use.model="com.ixm.core.models.NavigationModel"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+    <div class="component navigation automate-navigation-ixmtop nav-ixm nav-group navigation-main navigation-main-horizontal initialized">
+        <div class="component-content navigationComponent " style="width: max-content;">
+            <nav >
+                <ul class="clearfix1 row col-12">
+                    <div classs="col-10" data-sly-list.navigationPage="${model.navigationPages}">
+
+                        <li class="nav-green level1 submenu item0 odd first rel-level1">
+                            <div class="nav-link">
+                                <span class="text field-navigationtitle">
+                                    <a title="${navigationPage[0].title}" href="${navigationPage[0].path}.html">${navigationPage[0].title}</a>
+                                </span>
+                                <span class="top-border"></span>
+                            </div>
+                            <ul class="clearfix">
+                                <sly data-sly-list.childPage="${navigationPage[0].childPages}">
+                                    <li class=" level2 item0 odd first rel-level2">
+                                        <div class="nav-link">
+                                            <span class="text field-navigationtitle">
+                                                <a title="${childPage.title}" href="${childPage.path}.html">${childPage.title}</a>
+                                            </span>
+                                            <span class="top-border"></span>
+                                        </div>
+                                    </li>
+                                </sly>
+                            </ul>
+                        </li>						
+                    </div>
+					<div class="col-1" style="padding-left: 0px;">
+					<li class="nav-green searchDisplayClick">
+                            <div class="nav-link">
+                          <span class="text field-navigationtitle">
+                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" version="1.1">
+                                <title>search</title>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                   <g id="Home-Page" transform="translate(-1396.000000, -30.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                      <g id="search" transform="translate(1396.000000, 30.000000)">
+                                         <path d="M19.7280055,17.2912801 L15.8331894,13.3971292 C15.6573952,13.2213651 15.4190966,13.1237184 15.1690783,13.1237184 L14.532313,13.1237184 C15.6105168,11.7449468 16.2511887,10.0107411 16.2511887,8.12420662 C16.2511887,3.63636364 12.6142039,0 8.12559434,0 C3.63698477,0 0,3.63636364 0,8.12420662 C0,12.6120496 3.63698477,16.2484132 8.12559434,16.2484132 C10.0124511,16.2484132 11.746953,15.6078508 13.1259601,14.5298311 L13.1259601,15.1664876 C13.1259601,15.4164632 13.2236235,15.6547212 13.3994176,15.8304853 L17.2942337,19.7246363 C17.6614481,20.0917879 18.2552415,20.0917879 18.6185493,19.7246363 L19.724099,18.6192755 C20.0913133,18.2521238 20.0913133,17.6584318 19.7280055,17.2912801 Z M8.12559434,13.1237184 C5.36367357,13.1237184 3.12522859,10.8895616 3.12522859,8.12420662 C3.12522859,5.36275754 5.35976704,3.12469485 8.12559434,3.12469485 C10.8875151,3.12469485 13.1259601,5.35885167 13.1259601,8.12420662 C13.1259601,10.8856557 10.8914216,13.1237184 8.12559434,13.1237184 Z" id="Shape"></path>
+                                      </g>
+                                   </g>
+                                </g>
+                             </svg>
+                          </span>
+                                <span class="top-border"></span>
+                            </div>
+                        </li>
+
+					<div>	
+                </ul>
+            </nav>
+        </div>
+        <div class="searchResult" data-sly-resource = "${'search' @ resourceType = 'ixm-aem/components/searchixm'}" style="display:none"></div>
+    </div>
+</sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!model.navigationPages}">
+</sly>

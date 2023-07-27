@@ -1,0 +1,88 @@
+
+.cmp-carousel__item{
+    display: none;
+}
+.teaserContainer{
+    width: 99vw;
+	position: relative;
+	left: calc(-49vw + 49%);
+    .teaserImage{
+        width: 100%;
+    }
+    .text{
+        position: absolute;
+        top: 30%;
+        color: white;
+        // text-align: center;
+        max-width: 600px;
+        left: 3%;
+        h2{
+        font-size: 60px;
+        line-height: 1.17;
+        margin-bottom: 10px;
+        }
+        p{
+            font-size: 24px;
+            line-height: 1.42;
+            max-width: 493px;
+        }
+    
+    }
+
+}
+.mask {
+
+    position: absolute;
+
+    width: 50%;
+
+    height: 80px;
+
+    bottom: 0;
+
+    background-color: var(--primaryColor);
+
+}
+.cmp-carousel__actions {
+
+    display: flex;
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 100%;
+
+    justify-content: center;
+
+    z-index: 1;
+
+}
+
+.cmp-carousel__actions button {
+
+    width: 80px;
+
+    height: 80px;
+
+    border: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background: #fff;
+
+}
+.cmp-carousel__indicators{
+
+    display: none;
+    }
+      .cmp-carousel__action--next {
+
+        background-color: var(--secondaryColor) !important;
+
+    }
+    

@@ -1,0 +1,331 @@
+.container {
+    max-width: 1160px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content *, .rich-text * {
+    max-width: 100%;
+}
+section {
+    display: block;
+    margin-bottom: 100px;
+}
+.subscription-inner {
+    border-radius: 4px;
+    border: solid 2px var(--secondaryColor);
+    padding: 50px;
+}
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscription-inner h4 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--textColor);
+    max-width: 400px;
+}
+.social-list {
+    margin: 0!important;
+    padding: 0!important;
+    list-style: none;
+    display: flex;
+}
+.social-list li:first-child {
+    margin-left: 0!important;
+}
+.social-list li {
+    list-style: none!important;
+}
+
+.content a, .rich-text a {
+    color: #de232f;
+    text-decoration: underline;
+    font-size: 1em;
+}
+.social-list img {
+    display: block;
+}
+.social-list li+li {
+    margin-left: 15px;
+}
+.sitecore-form>.component-content {
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #747474;
+}
+
+.subscription-inner .email-sub-form, .subscription-inner form {
+    display: block;
+    border-radius: 3px;
+    border: solid 2px var(--secondaryColor);
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding-right: 130px;
+}
+.sitecore-form form {
+    font-size: 13px;
+    color: #747474;
+}
+
+.sitecore-form button, .sitecore-form input {
+    font-family: EquipExtended,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #001046;
+    padding: 19px 18px 20px 20px!important;
+    background-color: var(--secondaryColor)!important;
+    text-decoration: none;
+    border-radius: 4px!important;
+    text-transform: none;
+}
+.sitecore-form button, .sitecore-form input {
+    display: inline-block;
+    box-sizing: border-box;
+    background: var(--textColor)!important;
+    border: 1px solid #d2d2d2;
+    clear: both;
+    height: auto;
+}
+
+.sitecore-form form>div label {
+    font-family: inherit;
+    padding-right: 5px;
+}
+.sitecore-form label {
+    background: 0 0;
+    color: #747474;
+}
+
+// footer second part
+
+footer .footer-top {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.86;
+    letter-spacing: normal;
+    color: var(--textColor);
+}
+.container>.component-content>.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.column-splitter {
+    max-width: none;
+}
+.row.column-splitter>div {
+    padding-left: 0;
+    padding-right: 0;
+}
+.image .article-img-left.field-image img {
+    padding: 10px;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+footer img {
+    display: block;
+    margin-bottom: 0;
+}
+footer .footer-col.footer-logo {
+    width: 196px;
+}
+.component.link-list.col-12 {
+    padding-top: 20px;
+}
+ .link-list h3 {
+    font-size: 20px;
+    line-height: normal;
+    color: var(--secondaryColor);
+    margin-bottom: 10px;
+}
+
+.link-list>.component-content ul {
+    background: 0 0;
+    padding-top: 20px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.link-list>.component-content li {
+    background: 0 0;
+    display: block;
+    font-size: 16px;
+}
+.link-list>.component-content li a {
+    text-decoration: none;
+}
+// part 3 footer
+
+.footer-margin {
+    margin-top: 13rem;
+    margin-bottom: 6rem;
+}
+
+.footer-text-component .component-content {
+    float: right;
+}
+//part3 second part hide for demo
+
+.language-selector{
+    display: none;
+}
+
+//email subscription code
+
+.subscription-inner {
+    border-radius: 4px;
+   // border: solid 2px #47d7ac;
+    padding: 50px;
+}
+.sitecore-form {
+    padding: 0;
+}
+.component {
+    box-sizing: border-box;
+}
+
+.component-content {
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #747474;
+}
+
+.subscription-inner .email-sub-form, .subscription-inner form {
+    display: block;
+    border-radius: 3px;
+    border: solid 2px var(--secondaryColor);
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding-right: 130px;
+}
+.sitecore-form form {
+    font-size: 13px;
+    color: #747474;
+}
+.subscription-inner .email-sub-form button, .subscription-inner .email-sub-form input[type=submit], .subscription-inner form button, .subscription-inner form input[type=submit] {
+    background-color: var(--secondaryColor)!important;
+}
+.sitecore-form button:hover, .sitecore-form input[type=button]:hover, .sitecore-form input[type=reset]:hover, .sitecore-form input[type=submit]:hover {
+    background: #f7f7f7!important;
+}
+.subscription-inner .email-sub-form button, .subscription-inner .email-sub-form input[type=submit], .subscription-inner form button, .subscription-inner form input[type=submit] {
+    padding: 20px 26px 19px 27px;
+    border-radius: 0;
+    background-color: var(--secondaryColor);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    color: #001046;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+subscription-inner .email-sub-form input[type=email], .subscription-inner .email-sub-form input[type=text], .subscription-inner form input[type=email], .subscription-inner form input[type=text] {
+    background-color: transparent!important;
+    box-shadow: none!important;
+}
+.subscription-inner .email-sub-form input[type=email], .subscription-inner .email-sub-form input[type=text], .subscription-inner form input[type=email], .subscription-inner form input[type=text] {
+    border-radius: 3px;
+    height: 60px;
+    background: 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    width: 100%;
+    padding: 10px 30px;
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: EquipExtended,Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 0;
+}
+.subscription-inner .email-sub-form input[type=email], .subscription-inner .email-sub-form input[type=text], .subscription-inner form input[type=email], .subscription-inner form input[type=text] {
+    border-radius: 3px;
+    height: 60px;
+    background: 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    width: 100%;
+    padding: 10px 30px;
+    border: 0;
+}
+.subscription-inner h4 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    max-width: 400px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+*, :after, :before {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+container {
+    max-width: 1160px;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+
+}
+
+.socialIcons {
+    height: 20px;
+    width: 20px;
+}
+
+::placeholder {
+  color: White;
+}
+.field-link,.field-copyright-text,.footer-top,.component-content{
+  color:white;
+}
+//footer bugs
+.link-list > .component-content li a {
+    color: white !important;
+}

@@ -1,0 +1,8 @@
+<sly data-sly-use.model="com.ixm.core.models.TileModel"
+	data-sly-use.template="core/wcm/components/commons/v1/templates.html">	 	
+    <sly data-sly-test='${model.tileItems.size>1 && model.layout=="2x2"}' data-sly-include='twoTiles.html'/>
+    <sly data-sly-test='${model.tileItems.size>1 && model.layout=="3x3"}' data-sly-include='threeTiles.html'/>
+    <sly data-sly-test='${model.tileItems.size==1}'  data-sly-include='oneTile.html'/>
+</sly>
+
+<sly data-sly-call="${template.placeholder @ isEmpty=!model.tileItems }"></sly>

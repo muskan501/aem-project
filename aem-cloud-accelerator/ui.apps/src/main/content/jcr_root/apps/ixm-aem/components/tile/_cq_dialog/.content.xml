@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tile"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Add a title"
+                                fieldDescription="Title for Component"
+                                fieldLabel="Title "
+                                name="./title"/>
+                            <subTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                emptyText="Add a subTitle"
+                                fieldDescription="Sub Title for Component"
+                                fieldLabel="Sub Title"
+                                name="./subTitle"/>
+                            <quotes
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                fieldDescription="Quotes to be displayed on top left and bottom right of the component"
+                                name="./quotes"
+                                text="Quotes"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                emptyText="Select Layout"
+                                fieldLabel="Layout"
+								required="{Boolean}true"
+                                name="./layout">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <style_2x2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="2x2"
+                                        value="2x2"/>
+                                    <style_3x3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="3x3"
+                                        value="3x3"/>
+                                </items>
+                            </layout>
+                            <tileItems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Tile Details"
+                                fieldLabel="Tile Details"
+                                required="{Boolean}true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    emptyText="Tile details"
+                                    name="./tileItems">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            emptyText="Add a title"
+                                            fieldDescription="Title for tile"
+                                            fieldLabel="Title "
+                                            name="./title"/>
+                                        <description
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            emptyText="Add a description"
+                                            fieldDescription="Description for tile"
+                                            fieldLabel="Description"
+											required="{Boolean}true"
+                                            name="./description"/>
+                                    </items>
+                                </field>
+                            </tileItems>
+                        </items>
+                    </column>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

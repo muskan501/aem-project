@@ -1,0 +1,47 @@
+<div data-sly-use.template="core/wcm/components/commons/v1/templates.html" style=" width: 1000px;margin-bottom: 88px;">
+    <sly data-sly-test="${properties.searchPath}" >       
+    </sly>
+
+	<div class="servletData" data1="${properties.searchPath @context='scriptString'}" data2="${properties.resultsSize @context='scriptString'}" style="display:none" ></div>
+</div>
+<sly data-sly-call="${template.placeholder @  isEmpty=!properties.searchPath}"></sly>
+
+<div
+    class="component search-box horizontal col-12 initialized open searchdisplay" id="header-searchbox" style="right: 40px;">
+    <div>
+        <section class="search-header-section">
+            <div class="container">
+                <div class="search-header-input-wrapper">
+                    <div class="search-header-icon">
+                        <img src="/content/dam/ixm-aem/images/search.svg" alt="search" />
+                    </div>
+                    <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+
+                        <input
+        					id="search-text"							
+                            type="text"
+                            class="search-box-input search-input tt-input"
+                            autocomplete="off"
+                            name="textBoxSearch"
+                            placeholder="Hey! What are you looking for?"
+                            spellcheck="false"
+                            style="position: relative; vertical-align: top; background-color: transparent; width:100%;"
+                        />
+
+                        <div role="listbox" class="tt-menu" style="position: absolute; border: none; top: 100%; left: 0px; z-index: 100; display: block;" aria-expanded="false">
+
+							<div id="resultList" role="presentation" class="tt-dataset tt-dataset-0"></div></div>
+
+                    </span>
+                    <button type="button" class="search-close closeSearch">
+                        <img src="/content/dam/ixm-aem/images/Cross-Icon.svg" alt="cancel" />
+                    </button>
+                    <button class="search-box-button-with-redirect btn search-btn" type="submit">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+

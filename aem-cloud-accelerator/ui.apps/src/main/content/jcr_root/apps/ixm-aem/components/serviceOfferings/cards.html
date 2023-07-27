@@ -1,0 +1,31 @@
+<sly data-sly-use.model="com.ixm.core.models.ServiceOfferings"
+   data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+   <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+   <sly data-sly-call="${clientLib.all @ categories='ixm-aem.serviceOfferings'}"/>
+   <div class="container">
+      <div class="row">
+         <h3 class="col-lg-12 field-eyebrow-text">${model.title}</h3>
+         <h1 class="col-lg-4 field-title">${model.subTitle}</h1>
+         <div class="col-lg-8 section-btn field-buttontext"><a class="btn" href="${model.ctaLink}">${model.ctaText}</a></div>
+      </div>
+   </div>
+   <div class="container">
+      <div data-sly-list.item="${model.offerings}" class="${model.layout} row">
+         <div class="page-list-block col-lg-3 col-md-6">
+            <div class="work-item">
+               <div>
+                  <a href="${item.pageURL}">
+                     <sly data-sly-test="${item.altText}">
+                        <img class="cardImage" src="${item.imageURL}" alt="${item.altText}">
+                     </sly>
+                  </a>
+               </div>
+               <div class="caption field-title">
+                  <a title="${item.title}" href="${item.pageURL}">${item.title}</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!model.title}"></sly>

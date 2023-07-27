@@ -1,0 +1,8 @@
+{
+  "externalizer.domains":[
+    "local $[env:AEM_EXTERNALIZER_LOCAL;default=https://author-p71852-e632554.adobeaemcloud.com]",
+    "author $[env:AEM_EXTERNALIZER_AUTHOR;default=https://author-p71852-e632554.adobeaemcloud.com]",
+    "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]",
+    "preview $[env:AEM_EXTERNALIZER_PREVIEW;default=http://localhost:4503]"
+  ]
+}

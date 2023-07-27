@@ -1,0 +1,28 @@
+<sly data-sly-use.model="com.ixm.core.models.ServiceOfferings"
+   data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+   <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+   <sly data-sly-call="${clientLib.all @ categories='ixm-aem.serviceOfferings'}"/>
+   <div class="component-content">
+      <section class="trending-now">
+         <div class="container">
+            <div class="row section-header">
+               <div class="col-lg-4">
+                  <h3 class="field-eyebrow-text">${model.title}</h3>
+                  <h2 class="field-title">${model.subTitle}</h2>
+               </div>
+            </div>
+            <div data-sly-list.item="${model.offerings}" class="${model.layout} row">
+               <div class="col-lg-3 trending-item">
+                  <div class="image" style="padding-bottom: 0px;">
+                     <a title="ExperienceledComm" href="${item.pageURL}">
+                     <img class="circle-width" alt="${item.altText}" src="${item.imageURL}" />
+                     </a>
+                  </div>
+                  <h4 class="field-title">${item.title}</h4>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+</sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!model.title}"></sly>

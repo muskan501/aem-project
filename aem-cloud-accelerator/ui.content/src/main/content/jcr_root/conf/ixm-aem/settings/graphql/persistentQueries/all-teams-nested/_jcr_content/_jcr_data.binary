@@ -1,0 +1,16 @@
+query allTeams {
+    teamList {
+        items {
+            _path
+            title
+            shortName
+            description {
+                plaintext
+            }
+            teamMembers {
+                fullName
+                occupation
+            }
+        }
+    }
+}

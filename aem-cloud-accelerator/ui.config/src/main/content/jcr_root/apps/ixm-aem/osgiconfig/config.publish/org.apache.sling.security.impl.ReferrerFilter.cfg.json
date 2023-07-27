@@ -1,0 +1,6 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "allow.hosts":[
+    "https://publish-p71852-e632554.adobeaemcloud.com"
+  ]
+}

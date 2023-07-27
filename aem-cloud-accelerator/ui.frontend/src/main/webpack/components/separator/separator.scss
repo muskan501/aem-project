@@ -1,0 +1,59 @@
+:root {
+	--separator-width-1px: 1px;
+	--separator-width-2px: 2px;
+	--separator-width-3px: 3px;
+	--separator_width-50px: 50px;
+	--separator-color-1: white;
+	--separator-color-2: var(--secondaryColor);
+	--separator-color-3: var(--primaryColor);
+	--separator-color-4: var(--primaryColor);
+}
+hr {
+	height: 0px;
+	background: white;
+}
+.separator_width1 {
+	hr {
+		height: var(--separator-width-1px);
+	}
+}
+.separator_width2 {
+	hr {
+		height: var(--separator-width-2px);
+	}
+}
+.separator_width3 {
+	hr {
+		height: var(--separator-width-3px);
+	}
+}
+
+.separator_width50 {
+	hr {
+		height: var(--separator_width-50px);
+	}
+}
+
+
+.separator_color1 {
+	hr {
+		background: var(--separator-color-1);
+	}
+}
+.separator_color2 {
+	hr {
+		background: var(--separator-color-2);
+	}
+}
+.separator_color3 {
+	hr {
+		background: var(--separator-color-3);
+	}
+}
+
+.separator_color4{
+	hr {
+		background: var(--separator-color-3);
+		opacity: 5%;
+	}
+}

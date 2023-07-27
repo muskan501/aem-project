@@ -1,0 +1,253 @@
+.clearfix1 {
+	div {
+		.submenu {
+			&:nth-child(n) {
+				position: relative;
+				z-index: 1;
+				.top-border {
+					background-color: #47d7ac;
+				}
+			}
+			&:nth-child(2n) {
+				position: relative;
+				z-index: 1;
+				.top-border {
+					background-color: #7058a5;
+				}
+			}
+			&:nth-child(3n) {
+				position: relative;
+				z-index: 1;
+				.top-border {
+					background-color: #f58b60;
+				}
+			}
+			&:nth-child(4n) {
+				position: relative;
+				z-index: 1;
+				.top-border {
+					background-color: #33a8ff;
+				}
+			}
+			&:nth-child(n)::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transform: scaleY(0);
+				transform-origin: top center;
+				background: #47d7ac;
+				z-index: -1;
+				transition: transform 0.5s;
+			}
+			&:nth-child(n):hover {
+				&::after {
+					transform: scaleY(1);
+				}
+			}
+			&:nth-child(2n)::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transform: scaleY(0);
+				transform-origin: top center;
+				background: #7058a5;
+				z-index: -1;
+				transition: transform 0.5s;
+			}
+			&:nth-child(2n):hover {
+				&::after {
+					transform: scaleY(1);
+				}
+			}
+			&:nth-child(3n)::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transform: scaleY(0);
+				transform-origin: top center;
+				background: #f58b60;
+				z-index: -1;
+				transition: transform 0.5s;
+			}
+			&:nth-child(3n):hover {
+				&::after {
+					transform: scaleY(1);
+				}
+			}
+			&:nth-child(4n)::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				transform: scaleY(0);
+				transform-origin: top center;
+				background: #33a8ff;
+				z-index: -1;
+				transition: transform 0.5s;
+			}
+			&:nth-child(4n):hover {
+				&::after {
+					transform: scaleY(1);
+				}
+			}
+		}
+	}
+	.level1 {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+.searchDisplayClick {
+	margin-left: 0px;
+	padding-left: 0px;
+	position: relative;
+	z-index: 1;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: scaleY(0);
+		transform-origin: top center;
+		background: #47d7ac;
+		z-index: -1;
+		transition: transform 0.5s;
+	}
+	&:hover {
+		&::after {
+			transform: scaleY(1);
+		}
+	}
+}
+.clearfix {
+	width: max-content;
+	border: none !important;
+}
+
+.submenu {
+	&:nth-child(n) {
+		.clearfix {
+			.level2 {
+				.nav-link {
+					position: relative;
+					z-index: 1;
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transform: scaleY(0);
+						transform-origin: top center;
+						background: #47d7ac;
+						z-index: -1;
+						transition: transform 0.4s;
+					}
+					&:hover {
+						&::after {
+							transform: scaleY(1);
+						}
+					}
+				}
+			}
+		}
+	}
+	&:nth-child(2n) {
+		.clearfix {
+			.level2 {
+				.nav-link {
+					position: relative;
+					z-index: 1;
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transform: scaleY(0);
+						transform-origin: top center;
+						background: #7058a5;
+						z-index: -1;
+						transition: transform 0.4s;
+					}
+					&:hover {
+						&::after {
+							transform: scaleY(1);
+						}
+					}
+				}
+			}
+		}
+	}
+	&:nth-child(3n) {
+		.clearfix {
+			.level2 {
+				.nav-link {
+					position: relative;
+					z-index: 1;
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transform: scaleY(0);
+						transform-origin: top center;
+						background: #f58b60;
+						z-index: -1;
+						transition: transform 0.4s;
+					}
+					&:hover {
+						&::after {
+							transform: scaleY(1);
+						}
+					}
+				}
+			}
+		}
+	}
+	&:nth-child(4n) {
+		.clearfix {
+			.level2 {
+				.nav-link {
+					position: relative;
+					z-index: 1;
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transform: scaleY(0);
+						transform-origin: top center;
+						background: #33a8ff;
+						z-index: -1;
+						transition: transform 0.4s;
+					}
+					&:hover {
+						&::after {
+							transform: scaleY(1);
+						}
+					}
+				}
+			}
+		}
+	}
+}

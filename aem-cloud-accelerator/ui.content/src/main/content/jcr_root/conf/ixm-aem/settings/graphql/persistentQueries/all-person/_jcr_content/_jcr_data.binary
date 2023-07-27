@@ -1,0 +1,8 @@
+query allTeams {
+  personList {
+    items {
+     
+     fullName
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/global/settings/translation/rules" mode="update"/>
+    <filter root="/conf/global/settings/workflow/models/ixm-aem" mode="merge"/>
+    <filter root="/conf/ixm-aem/settings/dam/cfm" mode="update"/>
+    <filter root="/conf/ixm-aem/settings/graphql" mode="update"/>
+    <filter root="/conf/ixm-aem/settings/wcm" mode="update"/>
+    <filter root="/content/cq:graphql" mode="merge"/>
+    <filter root="/content/dam/ixm-aem" mode="merge"/>
+    <filter root="/content/experience-fragments/ixm-aem" mode="merge"/>
+    <filter root="/content/ixm-aem" mode="merge"/>
+	<filter root="/var/workflow/models/ixm-aem" mode="merge"/>
+</workspaceFilter>

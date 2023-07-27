@@ -1,0 +1,5 @@
+{
+  "user.mapping": [
+    "ixm-aem.core:migrationSubService=migrationSystemUser"
+  ]
+}

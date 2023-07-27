@@ -1,0 +1,17 @@
+<sly data-sly-use.model="com.ixm.core.models.Title" data-sly-test.title="${model.title}">
+    <div class="ixmTitle">
+       <h1 data-sly-element="${model.type}">
+            <sly data-sly-test.linkUrl="${model.linkUrl}">
+                <a href="${model.linkUrl}" target="${model.linkTarget}">
+                    ${title}
+                </a>
+            </sly>
+            <sly data-sly-test="${!linkUrl}">${title}</sly>
+       </h1>
+    </div>
+</sly>
+<sly data-sly-test="${!title}">
+    <div class="ixmTitle">
+        <h1 data-sly-element="${model.type}">${currentPage.title}</h1>
+    </div>
+</sly>
